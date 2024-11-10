@@ -61,8 +61,8 @@ def selecte_boards(boards):
         board= boards[i]
         print(f"board {i + 1}: grid {board['n']}x{board['n']}, steps to Win: {board['allStep']}")
         
-    choice= int(input("enter the number boards Bro:")) - 1
-    if 0 < choice < len(boards):
+    choice= int(input("enter the number boards Bro:"))-1 
+    if 0 <= choice < len(boards):
         select_board= boards[choice] 
         return select_board
     else:
