@@ -129,8 +129,7 @@ class MagnetBRo:
     def DFS(self):  
         self.is_playerMode=False
         magnet_x1 ,magnet_y1=self.magnets[0].x, self.magnets[0].y
-        magnet_x2 ,magnet_y2=self.magnets[1].x, self.magnets[1].y
-        Stack=[(magnet_x1,magnet_y1,  magnet_x2 if len(self.magnets)>1 else None,  magnet_y2 if len(self.magnets) > 1 else None,  [])]
+        Stack=[(magnet_x1,magnet_y1,  self.magnets[1].x if len(self.magnets)>1 else None,  self.magnets[1].y if len(self.magnets) > 1 else None,  [])]
         visited=set()
         
         while Stack:
@@ -163,7 +162,6 @@ class MagnetBRo:
     def BFS(self):
         self.is_playerMode=False
         magnet_x1, magnet_y1 =self.magnets[0].x, self.magnets[0].y
-        magnet_x2 , magnet_y2 =self.magnets[1].x, self.magnets[1].y
         queue = deque([(magnet_x1,magnet_y1,self.magnets[1].x if len(self.magnets) > 1 else None,self.magnets[1].y if len(self.magnets) > 1 else None , [])])
         visited =set()
         
