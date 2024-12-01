@@ -3,40 +3,24 @@ from Magnet_Game import MagnetBRo
 
 def Sboard():
     boards =[
-        {
+         {
             #1
             "n": 4,
             "allStep": 5,
-            "magnets": [MAGNET(0, 2, "-")],
+            "magnets": [MAGNET(1, 3, "-")],
             "balls": [Ball(2, 1)],
-            "Taragets": [Taraget(3, 0), Taraget(3, 2)]
+            "Taragets": [Taraget(1, 1),Taraget(3, 1)]
         },
         {
             #2
-            "n": 4,
-            "allStep": 5,
-            "magnets": [MAGNET(3, 3, "+"),],
-            "balls": [Ball(0, 2),Ball(0, 3),Ball(3, 0)],
-            "Taragets": [Taraget(0,1), Taraget(1, 2),Taraget(2, 1),Taraget(2, 2)]
-        },
-        {
-            #3
             "n": 5,
             "allStep": 2,
             "magnets": [MAGNET(2, 1, "-"),MAGNET(2, 2, "+"),],
             "balls": [Ball(1, 0),Ball(3, 0)],
             "Taragets": [Taraget(0, 0), Taraget(2, 0),Taraget(4, 1),Taraget(4, 2)]
         },
-         {
-            #4
-            "n": 5,
-            "allStep": 5,
-            "magnets": [MAGNET(2, 0, "-"),MAGNET(2, 2, "+"),],
-            "balls": [Ball(1, 0),Ball(3, 0),Ball(1, 4),Ball(3, 4)],
-            "Taragets": [Taraget(0, 1), Taraget(1, 2),Taraget(0, 3),Taraget(2, 3),Taraget(4, 1),Taraget(4, 3)]
-        },
         {
-            #5
+            #3
             "n": 6,
             "allStep": 5,
             "magnets": [MAGNET(2, 4, "+"),MAGNET(3, 4, "-"),],
@@ -44,13 +28,14 @@ def Sboard():
             "Taragets": [Taraget(5, 2), Taraget(3, 1),Taraget(3, 2),Taraget(2, 2),Taraget(1 , 2)]
         },
         {
-            #6
+            #4
             "n": 5,
             "allStep": 5,
             "magnets": [MAGNET(2, 0, "-"),MAGNET(2, 2, "+"),],
             "balls": [Ball(1, 0),Ball(3, 0),Ball(1, 4),Ball(3, 4)],
             "Taragets": [Taraget(0, 1), Taraget(0, 3),Taraget(1, 2),Taraget(2, 3),Taraget(4 , 1),Taraget(4 , 3)]
         },
+        
         
     ]
     return boards
